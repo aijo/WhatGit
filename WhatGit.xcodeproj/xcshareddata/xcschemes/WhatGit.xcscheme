@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9FFB2E14215B4AC6BA52B6D4"
+               BuildableName = "libPods-WhatGit.a"
+               BlueprintName = "Pods-WhatGit"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "C88CE5BC18A5425F00BDB96E"
                BuildableName = "WhatGit.app"
                BlueprintName = "WhatGit"
