@@ -1,9 +1,9 @@
 language: objective-c
 
-before_install:
- - brew update
- - brew install xctool
- - gem install cocoapods -r
- - pod setup
+#before_install:
+# - brew update
+# - brew install xctool
+# - gem install cocoapods -r
+# - pod setup
 
 script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit build
