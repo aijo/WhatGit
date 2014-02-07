@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: WhatGit.xcworkspace
+xcode_scheme: WhatGit
