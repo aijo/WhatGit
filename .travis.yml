@@ -1,3 +1,7 @@
 language: objective-c
-xcode_workspace: WhatGit.xcworkspace
-xcode_scheme: WhatGit
+
+before_install:
+ - gem install cocoapods -r
+ - pod setup
+
+script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit build
