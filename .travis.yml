@@ -4,4 +4,4 @@ before_install:
  - gem install cocoapods -r
  - pod setup
 
-script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit build
+script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit test
