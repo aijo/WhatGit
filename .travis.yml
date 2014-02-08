@@ -2,7 +2,7 @@ language: objective-c
 rvm: 1.9.3
 xcode_workspace: WhatGit.xcworkspace
 xcode_scheme: WhatGit
-script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
+script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -configuration Release build archive
 before_script:
 - chmod +x scripts/add-key.sh
 - chmod +x scripts/remove-key.sh
@@ -16,7 +16,7 @@ env:
   global:
   - APPNAME="WhatGit"
   - 'DEVELOPER_NAME="iPhone Distribution: Chanintorn Asavavichairoj (B753CMQ4F6)"'
-  - PROFILE_NAME="Tester AdHoc"
+  - PROFILE_UUID="adhoc"
   - secure: KXSNXWd3jKjj+CYE5+sgjC3sgpNUxeArtoAKbyI3yULFnm3UgtaU7nKke0Tb4T2jNGXxsnoM2ZQ2GoKpS1FSOwS1R3AhTtJu+8ilGzMJQOFHtp+RR0tQ9zfZiKkHkyWKdAW4HmXljEL2ZyvyCfs+5cmb1GLm+NuW/Lp7ZmF4LNs=
   - secure: ZsnUplgOpiCijq1kOOlFdIuuUHFXQB78R4URJDAjmR7WWpN517iT1PjvjGIBc6HB5r+Yn5gW3ia4VlZAJLaW67fw6rmqp9yfT0X3c8qn7trrO29/B2NP4sdCcjvWnK2M8AtFEUNb28QqNfSlKqB6fhKP+zAUaDWN0m4rraXSDkM=
   - secure: XQkC6KVU2l7FBjLfpAy8lupXgye6AYQci/cX4H4V8qWxdcw2evYd/L/K/vUGbBXOdt8pDz6gGL7pqnwTmSgUisoat8g9SKFaUX7LY6nAsu1gqZcpY8DZ77TlYyB9nMJbzo19V8vCuPtnlGJdRE8PHxLWfixG+pGCWsbxK71MXB8=
