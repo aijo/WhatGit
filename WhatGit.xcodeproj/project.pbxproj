@@ -423,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chanintorn Asavavichairoj (S8C34CHUYN)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhatGit/WhatGit-Prefix.pch";
 				INFOPLIST_FILE = "WhatGit/WhatGit-Info.plist";
@@ -439,12 +439,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chanintorn Asavavichairoj (B753CMQ4F6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhatGit/WhatGit-Prefix.pch";
 				INFOPLIST_FILE = "WhatGit/WhatGit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E9BDD8BD-7547-4131-BFA9-9748356CD041";
+				PROVISIONING_PROFILE = "D408F436-5671-43A5-BC13-ED96F4FC3499";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
