@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "XCTest+Async.h"
+#import "APIClient.h"
 
 @interface WhatGitTests : XCTestCase
 
@@ -28,7 +30,13 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    ASYNC_TEST_START;
+    [[APIClient sharedAPI] getIPAddress:^(NSString *result){
+        NSLog(@"%@",result);
+        ASYNC_TEST_DONE;
+    }];
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    ASYNC_TEST_END;
 }
 
 @end

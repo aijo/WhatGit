@@ -22,6 +22,7 @@
 		C88CE5E218A5425F00BDB96E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88CE5C418A5425F00BDB96E /* UIKit.framework */; };
 		C88CE5EA18A5425F00BDB96E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C88CE5E818A5425F00BDB96E /* InfoPlist.strings */; };
 		C88CE5EC18A5425F00BDB96E /* WhatGitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C88CE5EB18A5425F00BDB96E /* WhatGitTests.m */; };
+		C88CE5F818A61C1800BDB96E /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C88CE5F718A61C1800BDB96E /* APIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		C88CE5E718A5425F00BDB96E /* WhatGitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatGitTests-Info.plist"; sourceTree = "<group>"; };
 		C88CE5E918A5425F00BDB96E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C88CE5EB18A5425F00BDB96E /* WhatGitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatGitTests.m; sourceTree = "<group>"; };
+		C88CE5F518A61BAF00BDB96E /* XCTest+Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTest+Async.h"; sourceTree = "<group>"; };
+		C88CE5F618A61C1800BDB96E /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		C88CE5F718A61C1800BDB96E /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				C88CE5D518A5425F00BDB96E /* ViewController.h */,
 				C88CE5D618A5425F00BDB96E /* ViewController.m */,
 				C88CE5D818A5425F00BDB96E /* Images.xcassets */,
+				C88CE5F618A61C1800BDB96E /* APIClient.h */,
+				C88CE5F718A61C1800BDB96E /* APIClient.m */,
 				C88CE5C718A5425F00BDB96E /* Supporting Files */,
 			);
 			path = WhatGit;
@@ -143,6 +149,7 @@
 		C88CE5E518A5425F00BDB96E /* WhatGitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C88CE5F518A61BAF00BDB96E /* XCTest+Async.h */,
 				C88CE5EB18A5425F00BDB96E /* WhatGitTests.m */,
 				C88CE5E618A5425F00BDB96E /* Supporting Files */,
 			);
@@ -296,6 +303,7 @@
 				C88CE5D718A5425F00BDB96E /* ViewController.m in Sources */,
 				C88CE5D118A5425F00BDB96E /* AppDelegate.m in Sources */,
 				C88CE5CD18A5425F00BDB96E /* main.m in Sources */,
+				C88CE5F818A61C1800BDB96E /* APIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
