@@ -4,8 +4,7 @@ xcode_scheme: WhatGit
 script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -configuration Release
   build archive
 before_script:
-- gem install cocoapods -r
-- pod setup
+- ./scripts/install.sh
 - ./scripts/add-key.sh
 after_script:
 - ./scripts/remove-key.sh
