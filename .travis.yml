@@ -2,8 +2,7 @@ language: objective-c
 rvm: 1.9.3
 xcode_workspace: WhatGit.xcworkspace
 xcode_scheme: WhatGit
-script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -configuration Release
-  build archive
+script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 before_script:
 - chmod +x scripts/add-key.sh
 - chmod +x scripts/remove-key.sh
