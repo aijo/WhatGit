@@ -1,7 +1,22 @@
 language: objective-c
-
-before_install:
- - gem install cocoapods -r
- - pod setup
-
-script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit test
+xcode_workspace: WhatGit.xcworkspace
+xcode_scheme: WhatGit
+script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -configuration Release
+  build archive
+before_script:
+- gem install cocoapods -r
+- pod setup
+- ./scripts/add-key.sh
+after_script:
+- ./scripts/remove-key.sh
+after_success:
+- ./scripts/testflight.sh
+env:
+  global:
+  - APPNAME="WhatGit"
+  - 'DEVELOPER_NAME="iPhone Distribution: Chanintorn Asavavichairoj (B753CMQ4F6)"'
+  - PROFILE_NAME="Tester AdHoc"
+  - secure: FooXAD8tAvTqNXGrvQrs9C2DJIRl28jWoLuqWuYYlu9OWsPoBCTaNlU/VXG37msNLRMmAerRfgnIcJHOYFHb9/GIKB5l9VP/NvhKF52uCijNmltHQrzirMVvBqSiwyhsQCo+gX3iLUqgviuhuNUjtbf96WomOWOI1jHtGtjWWnQ=
+  - secure: XCV8Fb+7fnYiVhMog8TleO47omW+lwgaFXjGHGGjRqTx1u44Su5T1XL3Ff7GZzp6iBqnX68qmxW7XKpek+XCai0+cwrIbbjsu4Usrsx3FdAQbWWEyo1UKJwsz38eegm20qERlYl46eX77WADnqC7xZjhpTFEnv1d8bAcUIDOzxg=
+  - secure: ekEVRpMPXlI+cQJhTSUyAdJiFbDb0u4CkzE5OeiYYIezhcLsU1Txt7yg7laqnKrbzb4OJ3ytov9FHUxIP7O+MqGDm0SC41wktqAE8/HXemyNX/xjCraheHD40J2LesyXR4ZLksQ05rpcYQ18ZPrP6gkSHIyT1xhN3ZlXy3kg/Nw=
+  - secure: dctifYcgX5YeSk67GrBP8b6k0KTWLD3KJ3SoGHiJ4krs+rXNXOZvV5GyK0/99bE2Eov8acG1EhhISqbthKKQ4GpIJQe3o8n70JE9acmvyG+hKkQ9GZj9AYJOGOtmHQijjJjY1GvRoacgHt7EwKWlqOePlYUIqN9gAhCPP9rGjes=
