@@ -5,9 +5,9 @@ xcode_scheme: WhatGit
 script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -configuration Release
   build archive
 before_script:
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/adhoc.mobileprovision.enc -d -a -out scripts/profile/adhoc.mobileprovision
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
+- chmod +x scripts/add-key.sh
+- chmod +x scripts/remove-key.sh
+- chmod +x scripts/testflight.sh
 - ./scripts/add-key.sh
 after_script:
 - ./scripts/remove-key.sh
