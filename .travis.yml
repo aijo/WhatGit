@@ -1,4 +1,5 @@
 language: objective-c
+rvm: 1.9.3
 xcode_workspace: WhatGit.xcworkspace
 xcode_scheme: WhatGit
 script: xctool -workspace WhatGit.xcworkspace -scheme WhatGit -configuration Release
