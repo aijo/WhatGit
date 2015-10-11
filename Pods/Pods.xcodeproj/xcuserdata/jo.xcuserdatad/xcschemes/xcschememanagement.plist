@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-WhatGit-AFNetworking.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>OHHTTPStubs.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,15 +19,50 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-WhatGitTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WhatGitUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9BEC97F574C94BF9A38323EE</key>
+		<key>08CCDFD2CA1F2B12F4D1D71B0BE86333</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FFB2E14215B4AC6BA52B6D4</key>
+		<key>24247BD4A350D9BEB84D622051BD8C84</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B2F30D90D85A544E9EFE2A49D392C25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53DF666DEEF77E8E66921CB9DDE6D1F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D79D28DA981348F39A16A463E4D2B2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9F753D23B3A010D0E2EB0AE0405D595</key>
 		<dict>
 			<key>primary</key>
 			<true/>
